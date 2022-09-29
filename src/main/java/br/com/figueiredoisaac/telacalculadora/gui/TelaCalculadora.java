@@ -15,10 +15,20 @@ import javax.swing.GroupLayout.Alignment;
 import main.java.br.com.figueiredoisaac.Numeros;
 import java.awt.BorderLayout;
 import java.awt.Cursor;
+import java.awt.Font;
+import java.awt.Color;
 
 public class TelaCalculadora extends JFrame {
 
 	public TelaCalculadora() {
+		setBackground(new Color(192, 192, 192));
+		setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		setResizable(false);
+		setTitle("CALC V1.0");
+		setMinimumSize(new Dimension(250, 200));
+		setForeground(new Color(128, 128, 128));
+		setFont(new Font("Tahoma", Font.PLAIN, 12));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		
 			JTextPane visorCalculadora = new JTextPane();
