@@ -55,16 +55,22 @@ public class Numeros {
 	private double executarOperacao(double n1, char operador, double n2) {
 		double resultado = 0.0;
 
-		if (operador == '+') {
-			resultado = n1 + n2;
-		} else if (operador == '-') {
-			resultado = n1 - n2;
-		} else if (operador == '/') {
-			resultado = n1 / n2;
-		} else if (operador == '*') {
-			resultado = n1 * n2;
+		switch (operador) {
+				case 43:
+					resultado = n1 + n2;
+					break;
+				case 45: 
+					resultado = n1 - n2;
+					break;
+				case 47: 
+					resultado = n1 / n2;
+					break;
+				case 42: 
+					resultado = n1 * n2;
+					break;
 		}
 		return resultado;
+		
 	}
 
 // recebemos a String calculo e atraves de um laço for e condicionais
